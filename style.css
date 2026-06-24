@@ -1,0 +1,147 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(
+        135deg,
+        #ffd6e7,
+        #ffc2d1,
+        #ffb3c6
+    );
+}
+
+.container{
+    width:90%;
+    max-width:500px;
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(255,105,180,0.25);
+}
+
+h1{
+    text-align:center;
+    color:#ff4d88;
+    margin-bottom:25px;
+}
+
+.input-section{
+    display:flex;
+    gap:10px;
+}
+
+input{
+    flex:1;
+    padding:12px;
+    border:2px solid #ffb6c1;
+    border-radius:10px;
+    outline:none;
+    font-size:16px;
+}
+
+input:focus{
+    border-color:#ff4d88;
+}
+
+#addBtn{
+    background:#ff4d88;
+    color:white;
+    border:none;
+    padding:12px 18px;
+    border-radius:10px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+#addBtn:hover{
+    background:#ff1f6b;
+}
+
+.task-info{
+    margin:20px 0;
+    text-align:center;
+    color:#ff4d88;
+    font-weight:bold;
+}
+
+#taskList{
+    list-style:none;
+}
+
+.task{
+    background:#ffe5ec;
+    padding:15px;
+    margin-bottom:12px;
+    border-radius:12px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.task span{
+    color:#444;
+}
+
+.actions{
+    display:flex;
+    gap:8px;
+}
+
+.done-btn{
+    background:#ff85a2;
+    color:white;
+    border:none;
+    width:35px;
+    height:35px;
+    border-radius:50%;
+    cursor:pointer;
+}
+
+.delete-btn{
+    background:#ff4d88;
+    color:white;
+    border:none;
+    width:35px;
+    height:35px;
+    border-radius:50%;
+    cursor:pointer;
+}
+
+.done-btn:hover{
+    transform:scale(1.1);
+}
+
+.delete-btn:hover{
+    transform:scale(1.1);
+}
+
+#clearBtn{
+    width:100%;
+    margin-top:20px;
+    padding:12px;
+    border:none;
+    background:#ff4d88;
+    color:white;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+#clearBtn:hover{
+    background:#ff1f6b;
+}
+
+/* JS can add this class */
+
+.completed{
+    text-decoration:line-through;
+    opacity:0.6;
+}
